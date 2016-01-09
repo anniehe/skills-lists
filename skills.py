@@ -70,7 +70,8 @@ def print_indexes(my_list):
 
     """
 
-    print "Nothing at all"
+    for i in range(len(my_list)):
+        print i, my_list[i]
 
 
 def long_words(word_list):
