@@ -160,6 +160,8 @@ def halvesies(number_list):
 
     halved_number_list = [number/2.0 for number in number_list]
 
+    # Alternative solution using for loops:
+
     # halved_number_list = []
     # for number in number_list:
     #     halved_number = number/2.0
@@ -176,7 +178,12 @@ def word_lengths(word_list):
 
     """
 
-    return []
+    word_lengths_list = []
+    for word in word_list:
+        word_length = len(word)
+        word_lengths_list.append(word_length)
+
+    return word_lengths_list
 
 
 def sum_numbers(number_list):
