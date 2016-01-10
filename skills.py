@@ -85,7 +85,16 @@ def long_words(word_list):
 
     """
 
-    return ['the wrong thing']
+    long_words_list = [word for word in word_list if len(word) > 4]
+
+    # Alternative solution using for loops:
+
+    # long_words_list = []
+    # for word in word_list:
+    #     if len(word) > 4:
+    #         long_words_list.append(word)
+
+    return long_words_list
 
 
 def smallest_int(number_list):
@@ -108,7 +117,9 @@ def smallest_int(number_list):
 
     """
 
-    return 100
+    sorted_number_list = sorted(number_list)
+    if number_list:
+        return sorted_number_list[0]
 
 
 def largest_int(number_list):
