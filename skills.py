@@ -294,7 +294,17 @@ def join_strings_with_comma(list_of_words):
 
     """
 
-    return ""
+    joined_string_with_commas = ""
+
+    if len(list_of_words) > 1:
+        for i in range(len(list_of_words)-1):
+            joined_string_with_commas += list_of_words[i] + ", "
+        joined_string_with_commas += list_of_words[len(list_of_words)-1]
+    else:
+        for word in list_of_words:
+            joined_string_with_commas += word
+
+    return joined_string_with_commas
 
 
 ##############################################################################
