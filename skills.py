@@ -178,10 +178,14 @@ def word_lengths(word_list):
 
     """
 
-    word_lengths_list = []
-    for word in word_list:
-        word_length = len(word)
-        word_lengths_list.append(word_length)
+    word_lengths_list = [len(word) for word in word_list]
+
+    # Alternative solution using for loops:
+
+    # word_lengths_list = []
+    # for word in word_list:
+    #     word_length = len(word)
+    #     word_lengths_list.append(word_length)
 
     return word_lengths_list
 
@@ -202,7 +206,11 @@ def sum_numbers(number_list):
 
     """
 
-    return None
+    total = 0
+    for number in number_list:
+        total += number
+
+    return total
 
 
 def mult_numbers(number_list):
