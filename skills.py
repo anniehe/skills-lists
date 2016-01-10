@@ -232,7 +232,11 @@ def mult_numbers(number_list):
 
     """
 
-    return None
+    result = 1
+    for number in number_list:
+        result *= number
+
+    return result
 
 
 def join_strings(word_list):
