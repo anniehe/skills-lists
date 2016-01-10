@@ -140,7 +140,9 @@ def largest_int(number_list):
 
     """
 
-    return 0
+    sorted_number_list = sorted(number_list)
+    if number_list:
+        return sorted_number_list[len(number_list)-1]
 
 
 def halvesies(number_list):
