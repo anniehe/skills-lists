@@ -142,7 +142,7 @@ def largest_int(number_list):
 
     sorted_number_list = sorted(number_list)
     if number_list:
-        return sorted_number_list[len(number_list)-1]
+        return sorted_number_list[-1]
 
 
 def halvesies(number_list):
@@ -299,10 +299,15 @@ def join_strings_with_comma(list_of_words):
     if len(list_of_words) > 1:
         for i in range(len(list_of_words)-1):
             joined_string_with_commas += list_of_words[i] + ", "
-        joined_string_with_commas += list_of_words[len(list_of_words)-1]
+        joined_string_with_commas += list_of_words[-1]
+
     else:
         for word in list_of_words:
             joined_string_with_commas += word
+
+    # Alternative solution:
+
+    # joined_string_with_commas = ", ".join(list_of_words)
 
     return joined_string_with_commas
 
